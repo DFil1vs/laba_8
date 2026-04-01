@@ -1,0 +1,22 @@
+﻿<Window x:Class="Lab8_Var34.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Вариант 34: Список друзей" Height="450" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+
+        <TextBox Name="InputBox" Grid.Row="0" Margin="5" KeyDown="InputBox_KeyDown"/>
+
+
+        <ListBox Name="DataBox" Grid.Row="1" Margin="5"/>
+
+
+        <TextBox Name="LogBox" Grid.Row="2" Margin="5" IsReadOnly="True" 
+                 TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"/>
+    </Grid>
+</Window>
